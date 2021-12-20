@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_menu_perfil"
+            android:title="@string/menu_perfil" />
+        <item
+            android:id="@+id/nav_servicios"
+            android:icon="@drawable/ic_menu_servicios"
+            android:title="@string/menu_servicios" />
+        <item
+            android:id="@+id/nav_productos"
+            android:icon="@drawable/ic_menu_productos"
+            android:title="@string/menu_productos" />
+        <item
+            android:id="@+id/nav_sucursales"
+            android:icon="@drawable/ic_menu_sucursales"
+            android:title="@string/menu_sucursales" />
+        <item
+            android:id="@+id/mapp"
+            android:icon="@drawable/ic_baseline_map_24"
+            android:title="Mapa" />
+        <item
+            android:id="@+id/oracle"
+            android:icon="@android:drawable/stat_notify_sync"
+            android:title="Oracle" />
+    </group>
+</menu>

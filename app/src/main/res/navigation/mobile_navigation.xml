@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_perfil">
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="co.usa.ciclo4.reto1v2.ui.perfil.PerfilFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/nav_servicios"
+        android:name="co.usa.ciclo4.reto1v2.ui.servicios.ServiciosFragment"
+        android:label="@string/menu_servicios"
+        tools:layout="@layout/fragment_servicios" >
+        <action
+            android:id="@+id/action_nav_servicios_to_nav_perfil"
+            app:destination="@id/nav_perfil" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_sucursales"
+        android:name="co.usa.ciclo4.reto1v2.ui.sucursales.SucursalesFragment"
+        android:label="@string/menu_sucursales"
+        tools:layout="@layout/fragment_sucursales" >
+        <action
+            android:id="@+id/action_nav_sucursales_to_nav_perfil"
+            app:destination="@id/nav_perfil" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_productos"
+        android:name="co.usa.ciclo4.reto1v2.ui.productos.ProductosFragment"
+        android:label="@string/menu_productos"
+        tools:layout="@layout/fragment_productos" >
+        <action
+            android:id="@+id/action_nav_productos_to_nav_perfil"
+            app:destination="@id/nav_perfil" />
+    </fragment>
+
+    <activity
+        android:id="@+id/mapp"
+        android:name="co.usa.ciclo4.reto1v2.mapp"
+        android:label="activity_mapp"
+        tools:layout="@layout/activity_mapp" />
+    <activity
+        android:id="@+id/oracle"
+        android:name="co.usa.ciclo4.reto1v2.Oracle"
+        android:label="activity_oracle"
+        tools:layout="@layout/activity_oracle" />
+
+
+</navigation>
